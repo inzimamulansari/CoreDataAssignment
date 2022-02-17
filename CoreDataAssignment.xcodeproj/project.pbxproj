@@ -17,6 +17,8 @@
 		1856963B27BE1DE5007D2DEC /* CoreDataAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856963A27BE1DE5007D2DEC /* CoreDataAssignmentTests.swift */; };
 		1856964527BE1DE5007D2DEC /* CoreDataAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856964427BE1DE5007D2DEC /* CoreDataAssignmentUITests.swift */; };
 		1856964727BE1DE5007D2DEC /* CoreDataAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856964627BE1DE5007D2DEC /* CoreDataAssignmentUITestsLaunchTests.swift */; };
+		1856965427BE339A007D2DEC /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856965327BE339A007D2DEC /* DataLoader.swift */; };
+		1856965627BE33EE007D2DEC /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856965527BE33EE007D2DEC /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		1856964027BE1DE5007D2DEC /* CoreDataAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1856964427BE1DE5007D2DEC /* CoreDataAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataAssignmentUITests.swift; sourceTree = "<group>"; };
 		1856964627BE1DE5007D2DEC /* CoreDataAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1856965327BE339A007D2DEC /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		1856965527BE33EE007D2DEC /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				1856962E27BE1DE3007D2DEC /* LaunchScreen.storyboard */,
 				1856963127BE1DE3007D2DEC /* Info.plist */,
 				1856962927BE1DD3007D2DEC /* CoreDataAssignment.xcdatamodeld */,
+				1856965327BE339A007D2DEC /* DataLoader.swift */,
+				1856965527BE33EE007D2DEC /* UserData.swift */,
 			);
 			path = CoreDataAssignment;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1856965627BE33EE007D2DEC /* UserData.swift in Sources */,
+				1856965427BE339A007D2DEC /* DataLoader.swift in Sources */,
 				1856962527BE1DD3007D2DEC /* ViewController.swift in Sources */,
 				1856962127BE1DD3007D2DEC /* AppDelegate.swift in Sources */,
 				1856962327BE1DD3007D2DEC /* SceneDelegate.swift in Sources */,
