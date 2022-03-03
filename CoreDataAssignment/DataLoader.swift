@@ -1,8 +1,7 @@
 //
 //  DataLoader.swift
-//  CoreDataAssignment
 //
-//  Created by Apple on 12/02/22.
+//  Created by Apple on 13/02/22.
 //
 
 
@@ -12,12 +11,8 @@ public class DataLoader {
     
     @Published var userData = [UserData]()
     
-    init() {
-        loadFromInternet()
-       
-    }
     
-    func loadFromInternet() {
+    func loadFromInternet(comp:@escaping([UserData]?, Error?) -> ()) {
         
         if let url = URL(string:"https://api.openweathermap.org/data/2.5/onecall?lat=33.441792&lon=-94.037689&exclude=hourly,daily&appid=8c74b3976e361cbcda0787c3c1011a29") {
 
@@ -29,8 +24,8 @@ public class DataLoader {
                         let jsonDecoder = JSONDecoder()
                         let dataFromJson = try jsonDecoder.decode(UserData.self, from: data)
                         
-                        
                         self.userData = [dataFromJson]
+                        comp(self.userData, nil)
                     }
                     catch let error {
                         print(error)
@@ -40,7 +35,6 @@ public class DataLoader {
             }.resume()
         }
     }
-    
     
     
 
