@@ -18,6 +18,7 @@ public class DataLoader {
 
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 
+                
                 if let data = data {
                     
                     do {
@@ -25,11 +26,13 @@ public class DataLoader {
                         let dataFromJson = try jsonDecoder.decode(UserData.self, from: data)
                         
                         self.userData = [dataFromJson]
-                        comp(self.userData, nil)
+                        comp(self.userData, error)
                     }
                     catch let error {
                         print(error)
                     }
+                }else{
+                    comp(self.userData,error) 
                 }
 
             }.resume()
